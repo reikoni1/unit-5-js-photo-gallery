@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>an-interactive-photo-gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    
+</head>
+<body>
+    
+
+    <form>
+        <input type="search" name="search" id="search" placeholder="Search" oninput="imgresearch()" >
+    </form>
+   
+    <div class="gallery">
+        <!-- js will create the photo gallery -->
+    </div>
+
+
+
+
+    <script src="js/baguetteBox.min.js" async></script>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
+    <script src="js/production-gallery-grid.js"></script>
+    <script src="js/mysearchfilter.js"></script>
+</body>
+</html>
