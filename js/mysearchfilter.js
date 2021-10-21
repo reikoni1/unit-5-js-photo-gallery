@@ -18,14 +18,14 @@ function imgresearch() {
 
     var input= document.getElementById("search").value.toLowerCase(); /* get the user input from the HTML searchbar and ignore letter case */
 
-    for(var a=1; a<=12; a++){ 
+    for(var a=0; a<caption.length; a++){ 
 
-        if (caption[a-1].toLowerCase().includes(input)){    /* check if the caption == user input and ignore letter case */
+        if (caption[a].toLowerCase().includes(input)){    /* check if the caption == user input and ignore letter case */
 
-            anchor[a-1].style.display = "block";  /* if the user input is associated with any caption set the style of the anchor element to "block" */
+            anchor[a].style.display = "block";  /* if the user input is associated with any caption set the style of the anchor element to "block" */
         } 
         else {
-            anchor[a-1].style.display = "none";   /* if the user input isn't associated with any caption set the style of the anchor element to "none" */
+            anchor[a].style.display = "none";   /* if the user input isn't associated with any caption set the style of the anchor element to "none" */
         }
     } 
 }  

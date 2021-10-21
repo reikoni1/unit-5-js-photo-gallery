@@ -15,7 +15,7 @@ var caption=["I love hay bales. Took this snap on a drive through the countrysid
 "I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."]
 
 
-/* Tis js will create the photo gallery using the innerHTML to inserte the content in HTML */
+/* This js will create the photo gallery using the innerHTML to insert the content in HTML */
 
 for(var a=1; a<=12; a++){
     if (a<=9){
