@@ -17,12 +17,13 @@ var caption=["I love hay bales. Took this snap on a drive through the countrysid
 
 /* This js will create the photo gallery using the innerHTML to insert the content in HTML */
 
-for(var a=1; a<=12; a++){
+for(var a=1; a<=alt.length; a++){
+    
     if (a<=9){
-        photopath += '<a href="photos/0'+a+'.jpg" data-caption="'+caption[a-1]+'"> <img src="photos/thumbnails/0'+a+'.jpg" alt="'+alt[a-1]+'"> </a>';
+        photopath += '<a href="photos/0'+a+'.jpg" data-caption="'+caption[a-1]+'"> <img src="photos/thumbnails/0'+a+'.jpg" alt="'+alt[a-1]+'"> </a>'; /*generate image from 1 to 9, i didn't changed the images name buy i adapted the js*/
     } 
     else {
-        photopath += '<a href="photos/'+a+'.jpg" data-caption="'+caption[a-1]+'"> <img src="photos/thumbnails/'+a+'.jpg" alt="'+alt[a-1]+'"> </a>';
+        photopath += '<a href="photos/'+a+'.jpg" data-caption="'+caption[a-1]+'"> <img src="photos/thumbnails/'+a+'.jpg" alt="'+alt[a-1]+'"> </a>'; /*generate image from 10 to max */
     }
     document.querySelector(".gallery").innerHTML=photopath;
 }

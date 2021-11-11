@@ -20,9 +20,9 @@ function imgresearch() {
 
     for(var a=0; a<caption.length; a++){ 
 
-        if (caption[a].toLowerCase().includes(input)){    /* check if the caption == user input and ignore letter case */
+        if (caption[a].toLowerCase().includes(input)){    /* check if the caption includes user input and ignore letter case */
 
-            anchor[a].style.display = "block";  /* if the user input is associated with any caption set the style of the anchor element to "block" */
+            anchor[a].style.display = "block";  /* if the user input is associated with any caption, set the style of the anchor element to "block" */
         } 
         else {
             anchor[a].style.display = "none";   /* if the user input isn't associated with any caption set the style of the anchor element to "none" */
